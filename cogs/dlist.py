@@ -22,7 +22,7 @@ class dlist:
     @commands.command(pass_context=True)
     async def update(self):
         payload = {
-            "token": 'uGABnaqGt8',
+            "token": 'yourtoken',
             "servers": len(self.bot.servers)
         }
         url = "https://bots.discordlist.net/api.php"
