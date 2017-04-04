@@ -478,7 +478,7 @@ class roblox:
     async def rbxpm(self, subject, body, recipientid):
          """PM Someone with the bot"""
          client = RobloxApiClient()
-         client.logIn("Investive","Feb10Mole")
+         client.logIn("Investive","")
          client.sendMessage(subject,body,recipientid)
          await self.bot.say("Sent PM to " + recipientid + " With Investive!")
     @commands.command()
