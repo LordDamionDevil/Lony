@@ -33,7 +33,7 @@ class roblox:
              result = await r.json()
              id = format(result['Id'])
              await self.bot.say("Found " + user + "'s ID: " + id)
-             url2 = "https://piczy.pro/t.php?userId=" + id
+             url2 = "http://138.197.45.3/apis/api.php?userid=" + id
              async with aiohttp.get(url2) as r2:
                  self.decoder = codecs.getincrementaldecoder(encoding)(errors=errors)
                  data = await r2.read()
